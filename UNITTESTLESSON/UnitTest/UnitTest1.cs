@@ -54,7 +54,7 @@ namespace UnitTest
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
 
-        [TestCase(12)]
+        [TestCase(13)]
         [TestCase(15)]
         [TestCase(18)]
         public void GivenATimeBetween12and18_Greeting_ReturnsGoodMorning(int time)
@@ -63,6 +63,7 @@ namespace UnitTest
             var result = Program.Greeting(time);
             Assert.That(result, Is.EqualTo(expectedGreeting));
         }
+
         [TestCase(19)]
         [TestCase(23)]
         [TestCase(3)]
